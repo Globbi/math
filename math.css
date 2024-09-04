@@ -1,0 +1,47 @@
+html {
+  font-size: 2.0em;
+}
+
+body {
+  margin: 0;
+}
+
+#graph-container {
+  position: fixed;
+  background: white;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vw;
+  max-height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -999;
+}
+
+#graph {
+  width: calc(100% - 1.7rem);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.3);
+}
+
+#info-container {
+  padding-top: 100vw;
+}
+
+#info-card {
+  background: green;
+  max-width: 100%;
+  min-height: calc(100vh - 100vw - 2rem);
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.3);
+}
+
+#info-card > * {
+  background: red;
+}
+

@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <link rel="stylesheet" href="math.css">
+  </head>
+  <body>
+    <div id="graph-container">
+      <svg id="graph" viewBox="0 0 100 100">
+        <polygon fill=red stroke-width=0 points="0,0 100,0 100,100" />
+      </svg>
+    </div>
+    <div id="info-container">
+      <div id="info-card">
+        <span>some info here</span>
+        <button type="button" onclick="updateFun()">Update Function</button>
+      </div>
+    </div>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
+    <script id="main-script" src="./math.js"></script>
+  </body>
 </html>
